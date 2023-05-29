@@ -36,6 +36,17 @@
 	
 	<div id="openfl-content"></div>
 	
+	<script>
+    // Capture the keydown event
+    window.addEventListener("keydown", function(event) {
+      // Check if the arrow keys are pressed
+      if (event.keyCode >= 37 && event.keyCode <= 40) {
+        // Prevent the default scroll behavior
+        event.preventDefault();
+      }
+    });
+  </script>
+	
 	<script type="text/javascript">
 		lime.embed ("PhysicsPlatformer", "openfl-content", 600, 440, { parameters: {} });
 	</script>
